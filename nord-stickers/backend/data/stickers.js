@@ -1,6 +1,5 @@
 const stickers = [
   {
-    _id: '1',
     name: 'Keep Calm',
     image: '/images/calm.png',
     price: 1.99,
@@ -9,7 +8,6 @@ const stickers = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'Coffee & Cigaret',
     image: '/images/cigar.png',
     price: 1.99,
@@ -18,7 +16,6 @@ const stickers = [
     numReviews: 15,
   },
   {
-    _id: '3',
     name: 'Coffee Break',
     image: '/images/coffee.png',
     price: 2.99,
@@ -27,7 +24,6 @@ const stickers = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'Best Dad in the Galaxy',
     image: '/images/dad.png',
     price: 3.99,
@@ -36,7 +32,6 @@ const stickers = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Offline Monster',
     image: '/images/dainasor.png',
     price: 4.99,
@@ -45,7 +40,6 @@ const stickers = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'I Code in the Dark',
     image: '/images/dark.png',
     price: 2.99,
@@ -54,7 +48,6 @@ const stickers = [
     numReviews: 12,
   },
   {
-    _id: '7',
     name: 'FullSnack Developer',
     image: '/images/fullsnack.png',
     price: 2.99,
@@ -63,7 +56,6 @@ const stickers = [
     numReviews: 18,
   },
   {
-    _id: '8',
     name: 'Geek Lego',
     image: '/images/Geek.png',
     price: 2.99,
@@ -72,7 +64,6 @@ const stickers = [
     numReviews: 1,
   },
   {
-    _id: '9',
     name: 'JavaScript',
     image: '/images/js.png',
     price: 4.99,
@@ -81,7 +72,6 @@ const stickers = [
     numReviews: 22,
   },
   {
-    _id: '10',
     name: 'I am a Lazy ProGrammer',
     image: '/images/lazy.png',
     price: 5.99,
@@ -90,7 +80,6 @@ const stickers = [
     numReviews: 32,
   },
   {
-    _id: '11',
     name: 'Legacy Code',
     image: '/images/legacy.png',
     price: 1.99,
@@ -99,7 +88,6 @@ const stickers = [
     numReviews: 15,
   },
   {
-    _id: '12',
     name: 'There is no Place like',
     image: '/images/localhome.png',
     price: 5.99,
@@ -108,7 +96,6 @@ const stickers = [
     numReviews: 32,
   },
   {
-    _id: '13',
     name: 'Metalica',
     image: '/images/metalica.png',
     price: 1.99,
@@ -117,7 +104,6 @@ const stickers = [
     numReviews: 19,
   },
   {
-    _id: '14',
     name: 'Nasa Nerd',
     image: '/images/nerd.png',
     price: 6.99,
@@ -126,7 +112,6 @@ const stickers = [
     numReviews: 52,
   },
   {
-    _id: '15',
     name: 'Nerd Life',
     image: '/images/nerdlife.png',
     price: 0.99,
@@ -135,7 +120,6 @@ const stickers = [
     numReviews: 16,
   },
   {
-    _id: '16',
     name: 'No Coffee No Code',
     image: '/images/nocoffe.png',
     price: 2.99,
@@ -144,7 +128,6 @@ const stickers = [
     numReviews: 1,
   },
   {
-    _id: '17',
     name: 'Node JS',
     image: '/images/nodejs.png',
     price: 3.99,
@@ -153,7 +136,6 @@ const stickers = [
     numReviews: 92,
   },
   {
-    _id: '18',
     name: 'SEMICOLON',
     image: '/images/semicolon.png',
     price: 3.99,
@@ -162,7 +144,6 @@ const stickers = [
     numReviews: 55,
   },
   {
-    _id: '19',
     name: 'It Works',
     image: '/images/works.png',
     price: 3.99,
@@ -171,7 +152,6 @@ const stickers = [
     numReviews: 45,
   },
   {
-    _id: '20',
     name: 'It is not a bug',
     image: '/images/bug.png',
     price: 2.99,

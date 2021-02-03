@@ -1,9 +1,20 @@
-import React from 'react';
-import stickers from '../stickers';
-import { Row, Col } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
 import Sticker from '../components/Sticker';
+import { Row, Col } from 'react-bootstrap';
+import axios from 'axios';
 
 const HomePage = () => {
+  const [stickers, setStickers] = useState([]);
+
+  useEffect(() => {
+    const fetchStickers = async () => {
+      const { data } = await axios.get('/api/stickers');
+
+      setStickers(data);
+    };
+    fetchStickers();
+  }, []);
+
   return (
     <>
       <h1>Latest Stickers</h1>

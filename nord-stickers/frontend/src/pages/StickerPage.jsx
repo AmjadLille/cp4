@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
 import Rating from '../components/Rating';
-import stickers from '../stickers';
 
 const StickerPage = ({ match }) => {
-  const sticker = stickers.find((x) => x._id === match.params.id);
+  const [sticker, setSticker] = useState({});
+
+  useEffect(() => {
+    const fetchSticker = async () => {
+      const { data } = await axios.get(`/api/stickers/${match.params.id}`);
+
+      setSticker(data);
+    };
+    fetchSticker();
+  }, [match]);
+
   const { name, image, rating, price, numReviews, countInStock } = sticker;
   return (
     <>
@@ -34,7 +44,7 @@ const StickerPage = ({ match }) => {
                 <Row>
                   <Col>Price: </Col>
                   <Col>
-                    <strong>{price} </strong>
+                    <strong>&euro; {price} </strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
