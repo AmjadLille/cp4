@@ -83,7 +83,7 @@ const stickers = [
   {
     _id: '10',
     name: 'I am a Lazy ProGrammer',
-    image: '/images/lazy.jpg',
+    image: '/images/lazy.png',
     price: 5.99,
     countInStock: 88,
     rating: 4.2,
@@ -92,7 +92,7 @@ const stickers = [
   {
     _id: '11',
     name: 'Legacy Code',
-    image: '/images/legacy.jpg',
+    image: '/images/legacy.png',
     price: 1.99,
     countInStock: 8,
     rating: 4.1,
@@ -101,7 +101,7 @@ const stickers = [
   {
     _id: '12',
     name: 'There is no Place like',
-    image: '/images/localhome.jpg',
+    image: '/images/localhome.png',
     price: 5.99,
     countInStock: 22,
     rating: 3.9,
@@ -170,6 +170,15 @@ const stickers = [
     rating: 4.6,
     numReviews: 45,
   },
+  {
+    _id: '20',
+    name: 'It is not a bug',
+    image: '/images/bug.png',
+    price: 2.99,
+    countInStock: 80,
+    rating: 3.5,
+    numReviews: 7,
+  },
 ];
 
-export default products;
+export default stickers;
