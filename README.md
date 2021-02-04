@@ -1,2 +1,3 @@
 # cp4
-to run: npm run dev
+to run front: npm start
+to run front and back: npm run dev
