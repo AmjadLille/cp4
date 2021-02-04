@@ -1,30 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { listStickers } from '../redux/actions/stickerActions';
+import Loader from '../components/Loader';
+import Message from '../components/Message';
 import Sticker from '../components/Sticker';
 import { Row, Col } from 'react-bootstrap';
-import axios from 'axios';
 
 const HomePage = () => {
-  const [stickers, setStickers] = useState([]);
+  const dispatch = useDispatch();
+  const stickerList = useSelector((state) => state.stickerList);
+  const { stickers, loading, error } = stickerList;
 
   useEffect(() => {
-    const fetchStickers = async () => {
-      const { data } = await axios.get('/api/stickers');
-
-      setStickers(data);
-    };
-    fetchStickers();
-  }, []);
+    dispatch(listStickers());
+  }, [dispatch]);
 
   return (
     <>
-      <h1>Latest Stickers</h1>
-      <Row>
-        {stickers.map((sticker) => (
-          <Col key={sticker._id} sm={12} md={6} lg={4} xl={3}>
-            <Sticker {...sticker} />
-          </Col>
-        ))}
-      </Row>
+      <h2>Latest Collection</h2>
+      {loading ? (
+        <Loader />
+      ) : error ? (
+        <Message variant="danger">{error}</Message>
+      ) : (
+        <Row>
+          {stickers.map((sticker) => (
+            <Col key={sticker._id} sm={12} md={6} lg={4} xl={3}>
+              <Sticker {...sticker} />
+            </Col>
+          ))}
+        </Row>
+      )}
     </>
   );
 };
